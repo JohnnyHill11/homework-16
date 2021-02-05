@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub api</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" async></script>
+</head>
+<body> 
+
+<div class="wrap">
+  <ul class = "list" id="property-list"></ul>
+  <form id="form">
+    <input id="input" type="text" placeholder="Enter login...">
+    <button id="button" type="submit">Search</button>
+  </form>
+</div>
+
+<script type="text/template" id = "listEl">
+    <li class = "list-item">Avatar:
+      <img src = "{{data.avatar_url}}" alt="avatar">
+    </li>
+    <li class = "list-item">Public repositories: {{data.public_repos}}</li>
+    <li class = "list-item">Followers: {{data.followers}}</li>
+    <li class = "list-item">Following: {{data.following}}</li>
+</script>
+
+</body>
+</html>
